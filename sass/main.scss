@@ -1,7 +1,151 @@
+@import "variables";
 body{
-    color: red;
-    a{
-        color:blue;
+    margin:0;
+  }
+
+  .wrapperAll{
+    display: grid;
+    grid-template-columns: $width-colum 1fr;
+    grid-template-rows: $height-row 1fr;
+    grid-template-areas:
+    "menu search"
+    "menu main";
+    height: 100%;
+    font-family:$font-family;
+  } 
+    
+/*SearchBar*/
+.headerWrapper {
+  grid-area: search;
+  background-color: $light-gray; 
+  width: 100%;
+  .headerContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .5em 1em;
+    box-sizing: border-box;
+  }
+  .sectionSide {
+    &--left {
+      width: 85%;
+      height: 100%;
+      background-color: $white;
+      overflow: hidden;
+    }
+    &--right {
+      width: 15%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      .squareSection, .circleSection {
+        display: flex;
+        justify-content: space-around;
+        height: 100%;
+        align-items: center;
+      }
+      .squareSection {
+        width: 60%;
+        padding: 0 1em;
+        border-right: 1px solid rgba($black, .2);
+      }
+      .circleSection {
+        width: 40%;
+      }
+    }
+  }
+}
+
+.searchWrapper {
+  height: 100%;
+  .searchContainer {
+    height: 100%;
+    display: flex;
+    .searchButton {
+      height: 100%;
+      border: none;
+      background-color: $violet;
+      width: 3em;
+      padding: 0.5em;
+      box-sizing: border-box;
+      color: $white;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+    .searchInput {
+      width: 100%;
+      border: none;
+      padding: 0.5em 1em;
+    }
+  }
+}
+
+.searchItem {
+  height: 2em;
+  width: 2em;
+  border-radius: 4px;
+  &--blue {
+    background-color: $blue;
+  }
+  &--violet {
+    background-color: $violet;
+  }
+}
+
+.itemCircle {
+  height: 2em;
+  width: 2em;
+  border-radius: 100%;
+  box-shadow: 2px 2px 5px $shadow;
+  &--white {
+    background-color: $white;
+    ;
+  }
+}
+/*navBar*/
+  
+  .iconBar {
+    width: 100%;
+    min-width: 70px;
+    height:100vh;
+    background: $gradient;
+    position: relative;
+    
+    a {
+        display: block; 
+        text-align: center; 
+        padding: 16px; 
+        transition: all 0.3s ease; 
+        text-decoration: none;
+        color:Silver; 
     }
 
+    & a:hover {
+        background-color:#03003b;
+        color:white;
+    }
+    a.lastIcon{
+        position:absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        color:#ffff;
+        }
 }
+  .active {
+  background:$iconActive;
+  }
+  
+  .contenedorIcon div:nth-child(1){
+    font-size: 20px;
+    text-align: center;
+    margin-top:5px;
+    
+  }
+  
+  .contenedorIcon div:nth-child(2){
+    font-size: 10px;
+    margin-top:5px;
+    text-transform: uppercase;
+  }

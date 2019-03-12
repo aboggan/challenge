@@ -6,16 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>InvGate</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
 </head>
 
 <body>
+ <div class="wrapperAll">
+  <!--SearchBar -->
+  <header class="headerWrapper">
+    <div class="headerContainer">
+      <section class="sectionSide--left">
+        <article class="searchWrapper">
+          <div class="searchContainer">
+            <button class="searchButton">
+              <i class="fas fa-search"></i>
+            </button>
+            <input type="text" placeholder="Search" class="searchInput">
+          </div>
+        </article>
+      </section>
+      <section class="sectionSide--right">
+        <article class="squareSection">
+          <div class="searchItem searchItem--blue"></div>
+          <div class="searchItem searchItem--violet"></div>
+        </article>
+        <article class="circleSection">
+          <div class="itemCircle itemCircle--white"></div>
+        </article>
+      </section>
+    </div>
+  </header>
   <!--navBar -->
   <nav>
     <div>
-      <div class="icon-bar">
+      <div class="iconBar">
         <a href="#">
           <div class="contenedorIcon">
             <div><i class="fas fa-bars"></i></div>
@@ -48,10 +73,7 @@
       </div>
     </div>
   </nav>
-
-  <!--SearchBar -->
-  <div>
-  </div>
+</div> 
   <!--cardsSection-->
   <div>
   </div>
@@ -59,11 +81,9 @@
   <div>
   </div>
   <!--Scripts-->
-  <script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script src="main.js"></script>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 
 </body>
 

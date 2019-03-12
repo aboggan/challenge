@@ -1,0 +1,23 @@
+// Font-Family variables
+$font-family: Helvetica, Arial, sans-serif;
+
+// Colors
+$gradient: linear-gradient(153deg, rgba(42,1,68,1) 0%, rgba(47,50,102,0.7875525210084033) 50%, rgba(72,110,166,1) 100%);
+$shadow: #c8ccd1;
+$blue: #276296;
+$violet: #332e58;
+$white: #ffffff;
+$black: #000000;
+$light-gray: #eaeaea;
+$iconActive: linear-gradient(153deg, rgba(255,255,255,0.22452731092436973) 0%, rgba(47,50,102,0.09007352941176472) 50%, rgba(255,255,255,0.19371498599439774) 100%);
+
+//Grid Column Values 
+$width-colum: 5em;
+$height-row: 3.6em;
+
+// Mediaquery variables
+$small: "screen and (min-width: 576px)";
+$medium: "screen and (min-width: 768px)";
+$large: "screen and (min-width: 992px)";
+$extra-large: "screen and (min-width: 1600px)";
+

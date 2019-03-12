@@ -1,4 +1,4 @@
-$('.icon-bar a').click(function(){
-  $('.icon-bar a').removeClass('active')
+$('.iconBar a').click(function(){
+  $('.iconBar a').removeClass('active')
   $(this).addClass('active')
 })

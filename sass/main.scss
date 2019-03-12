@@ -10,7 +10,7 @@ body{
     grid-template-areas:
     "menu search"
     "menu main";
-    height: 100%;
+    height: 100vh;
     font-family:$font-family;
   } 
     
@@ -32,12 +32,18 @@ body{
       height: 100%;
       background-color: $white;
       overflow: hidden;
+      @media#{$small}{
+        width:100%;
+      }
     }
     &--right {
       width: 15%;
       height: 100%;
       display: flex;
       justify-content: space-between;
+      @media#{$small}{
+        display: none;
+      }
       .squareSection, .circleSection {
         display: flex;
         justify-content: space-around;
@@ -84,6 +90,9 @@ body{
   height: 2em;
   width: 2em;
   border-radius: 4px;
+  @media#{$medium}{
+    display: none;
+  }
   &--blue {
     background-color: $blue;
   }
@@ -110,6 +119,7 @@ body{
     height:100vh;
     background: $gradient;
     position: relative;
+   
     
     a {
         display: block; 

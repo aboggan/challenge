@@ -13,7 +13,10 @@ body {
 .headerWrapper {
   grid-area: search;
   background-color: #eaeaea;
-  width: 100%; }
+  width: 100%;
+  -webkit-box-shadow: 0px 1px 11px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 11px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 11px -4px rgba(0, 0, 0, 0.75); }
   .headerWrapper .headerContainer {
     height: 100%;
     display: flex;
@@ -154,3 +157,14 @@ body {
     width: 17px;
     font-size: 12px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
+
+.mainWrapper {
+  grid-area: main;
+  height: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: minmax(580px, 2fr) minmax(300px, 1fr);
+  grid-column-gap: 1em;
+  grid-template-areas: "box aside";
+  background-color: #d5d5d5; }

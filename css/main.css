@@ -133,12 +133,24 @@ body {
 .active {
   background: linear-gradient(153deg, rgba(255, 255, 255, 0.224527) 0%, rgba(47, 50, 102, 0.0900735) 50%, rgba(255, 255, 255, 0.193715) 100%); }
 
-.contenedorIcon div:nth-child(1) {
-  font-size: 20px;
-  text-align: center;
-  margin-top: 5px; }
-
-.contenedorIcon div:nth-child(2) {
-  font-size: 10px;
-  margin-top: 5px;
-  text-transform: uppercase; }
+.contenedorIcon {
+  position: relative; }
+  .contenedorIcon div:nth-child(1) {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px; }
+  .contenedorIcon div:nth-child(2) {
+    font-size: 10px;
+    margin-top: 5px;
+    text-transform: uppercase; }
+  .contenedorIcon div:nth-child(3) {
+    position: absolute;
+    right: -2px;
+    top: -10px;
+    border: 2px solid #af3c3c;
+    border-radius: 14px;
+    background-color: #af3c3c;
+    color: #fff;
+    width: 17px;
+    font-size: 12px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }

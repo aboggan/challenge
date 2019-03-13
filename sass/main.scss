@@ -158,15 +158,28 @@ body{
   background:$iconActive;
   }
   
-  .contenedorIcon div:nth-child(1){
-    font-size: 20px;
-    text-align: center;
-    margin-top:5px;
-    
-  }
-  
-  .contenedorIcon div:nth-child(2){
-    font-size: 10px;
-    margin-top:5px;
-    text-transform: uppercase;
+  .contenedorIcon {
+    position: relative;
+    & div:nth-child(1){
+        font-size: 20px;
+        text-align: center;
+        margin-top:5px;
+    }
+    & div:nth-child(2){
+        font-size: 10px;
+        margin-top:5px;
+        text-transform: uppercase;
+    }
+    & div:nth-child(3){
+        position: absolute;
+        right: -2px;
+        top: -10px;
+        border: 2px solid $notification;
+        border-radius: 14px;
+        background-color: $notification;
+        color: #fff;
+        width: 17px;
+        font-size: 12px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);;
+    }
   }

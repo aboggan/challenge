@@ -1,6 +1,7 @@
 body {
   margin: 0; }
 
+/*wrrapperPage*/
 .wrapperAll {
   display: grid;
   grid-template-columns: 5em 1fr;
@@ -8,6 +9,10 @@ body {
   grid-template-areas: "menu search" "menu main";
   height: 100vh;
   font-family: Helvetica, Arial, sans-serif; }
+
+@media screen and (max-width: 375px) {
+  .wrapperAll {
+    grid-template-columns: 0em 1fr; } }
 
 /*SearchBar*/
 .headerWrapper {
@@ -125,6 +130,10 @@ body {
   height: 100vh;
   background: linear-gradient(153deg, #2a0144 0%, rgba(47, 50, 102, 0.787553) 50%, #486ea6 100%);
   position: relative; }
+
+@media screen and (max-width: 375px) {
+  .iconBar {
+    display: none; } }
   .iconBar a {
     display: block;
     text-align: center;
@@ -205,12 +214,17 @@ body {
   .mainWrapper .mainContent {
     grid-template-columns: 100%;
     grid-template-rows: 46% 50%; } }
+
+@media screen and (min-width: 1024px) {
+  .mainWrapper .mainContent {
+    grid-template-rows: 32% 32% 32%; } }
   .mainWrapper .asideContent {
     height: 100%;
     background-color: #ffffff;
     border-radius: 3px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
 
+/*CardsContent*/
 .card {
   background-color: #f4f4f4;
   height: 100%;
@@ -222,18 +236,29 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     height: 15vh; }
+
+@media screen and (min-width: 1024px) {
+  .card .mainBoxImg {
+    height: 10vh; } }
   .card .mainBox {
     height: 15vh;
     background: #eaeaea; }
+
+@media screen and (min-width: 1024px) {
+  .card .mainBox {
+    height: 10vh; } }
     .card .mainBox h4 {
       padding-top: 20px;
-      padding-right: 30px;
-      padding-left: 20px;
-      padding-bottom: 0px;
+      padding: 20px 30px 0px 20px;
       margin: 0;
       border-radius: 3px;
       font-size: 1vw;
       line-height: 1.5; }
+
+@media screen and (min-width: 1024px) {
+  .card .mainBox h4 {
+    font-size: 0.9vw;
+    padding-top: 15px; } }
 
 @media screen and (max-width:1024px) {
   .card .mainBox h4 {
@@ -241,7 +266,7 @@ body {
 
 @media screen and (max-width: 375px) {
   .card .mainBox h4 {
-    font-size: 3.2vw; } }
+    font-size: 3.8vw; } }
   .card p {
     padding: 30px 30px 5px 30px;
     font-size: 0.8vw;
@@ -249,18 +274,24 @@ body {
     color: #888888;
     margin: 0; }
 
+@media screen and (max-width: 375px) {
+  .card p {
+    font-size: 3.8vw; } }
+
 @media screen and (max-width:1024px) {
   .card p {
     font-size: 1.6vw; } }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 1024px) {
   .card p {
-    font-size: 2.8vw; } }
+    height: 10vh;
+    padding: 10px 30px 5px 30px;
+    font-size: 0.7vw;
+    line-height: 1.8; } }
 
 .ribbon {
   position: relative;
   padding: 0 0.5em;
-  font-size: 2.000em;
   margin: 0 0 0 2px;
   color: #e6e2c8;
   border-radius: 0 15px 15px 0;

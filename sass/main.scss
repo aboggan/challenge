@@ -140,8 +140,6 @@ body{
     height:100vh;
     background: $gradient;
     position: relative;
-   
-    
     a {
         display: block; 
         text-align: center; 
@@ -219,19 +217,19 @@ body{
     }
     .mainContent {
       grid-area: box;
-      background-color: $white;
+      background-color: #ffffff;
       padding: 1em;
       box-sizing: border-box;
       display: grid;
-      grid-template-columns: 32% 33% 33%;
-      grid-template-rows: 50% 50%;
-      grid-column-gap: 0.5em;
-      grid-row-gap: 0.5em;
+      grid-template-columns: 31% 33% 33%;
+      grid-template-rows: 49% 48%;
+      grid-column-gap: 0.8em;
+      grid-row-gap: 0.8em;
       border-radius: 3px;
-      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);  
       @media#{$largeMax}{
       grid-template-columns: 100%;
-      grid-template-rows: 50% 50%;}}
+      grid-template-rows: 46% 50%;}}
     .asideContent { 
       height: 100%;
       background-color: $white;
@@ -247,6 +245,13 @@ body{
   height: 100%;
   border-radius:3px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  .mainBoxImg{
+    background-image: url("../assets/image.png");
+    background-size: cover;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    height: 15vh;
+  }
   .mainBox{
     height: 15vh;
     background: #eaeaea;
@@ -262,11 +267,12 @@ body{
       @media#{$largeMax}{
         font-size: 2vw;}
       @media#{$small}{
-          font-size: 3vw;}
-        }
+          font-size: 3.2vw;}
+       
+  }
   }
     p{
-      padding: 30px;
+      padding: 30px 30px 5px 30px;
       font-size:0.8vw ;
       line-height: 1.8 ;
       color: #888888;
@@ -277,4 +283,55 @@ body{
           font-size: 2.8vw;}
 
     }
+}
+
+.ribbon{
+  position: relative;
+  padding: 0 0.5em;
+  font-size: 2.000em;
+  margin: 0 0 0 2px;
+  color: #e6e2c8;
+  border-radius: 0 15px 15px 0;
+  box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.5);
+  width:30%;
+  font-size: 1.5vw;
+  font-family:$font-family;
+  text-transform: uppercase;
+  div{
+    font-size: 1.7vh;
+    padding: 5px 0px 5px 20px;
+    font-weight: bold;
+  }
+
+  &.red{
+    background-color:$red;
+  }
+  &.green{
+    background-color:$green;
+    }
+
+  &:before, &:after{
+      position:absolute;
+      content: '';
+      display: block;
+  }
+  &:before{
+    width: 1vw;
+    height: 100%;
+    padding: 0 0 0.438em;
+    top: 0;
+    left: -0.5em;
+    background: inherit;
+    border-radius: 0.313em 0 0 0.313em;
+     
+  }
+  &:after{
+    width: 6px;
+    height: 0.313em;
+    background: rgba(0, 0, 0, 0.35);
+    bottom: -0.313em;
+    left: -3px;
+    border-radius: 0.313em 0 0 0.313em;
+    box-shadow: inset -1px 2px 2px rgba(0, 0, 0, 0.3);
+  }
 }

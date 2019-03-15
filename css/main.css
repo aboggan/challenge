@@ -268,7 +268,7 @@ body {
   .card .mainBox h4 {
     font-size: 3.8vw; } }
   .card p {
-    padding: 30px 30px 5px 30px;
+    padding: 10px 30px 5px 30px;
     font-size: 0.8vw;
     line-height: 1.8;
     color: #888888;
@@ -284,7 +284,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   .card p {
-    height: 10vh;
+    height: 8vh;
     padding: 10px 30px 5px 30px;
     font-size: 0.7vw;
     line-height: 1.8; } }
